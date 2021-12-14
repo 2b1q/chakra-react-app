@@ -72,9 +72,9 @@ export const App = () => {
               <ReactPlayer
                 url="https://downloader.disk.yandex.ru/disk/b6a96ef7e8c64fcf6c397939e0b6e0b694fb139708ae85e675f38cc974b61359/61b88e3f/W7XWPN7K8CPOll4n_1TefTlwRn4GsaM-oHZinuDnDo0qIZNpgWbxELqANEmXkGniwkNwLEMcobGLuyImquQClw%3D%3D?uid=0&filename=20200721_152504.mp4&disposition=attachment&hash=FFW74u5AF%2B7DmH58qwhm%2B83IMIaY61Y4N%2BhKVXWT8KRZOoVoqRzoKG7gX%2BYDPOyQq/J6bpmRyOJonT3VoXnDag%3D%3D%3A&limit=0&content_type=video%2Fmp4&owner_uid=4526528&fsize=133765253&hid=e4ee436782bb727311c7e8714515fda5&media_type=video&tknv=v2"
                 className="react-player"
-                playing
                 width="100%"
                 height="100%"
+                type="video/mp4"
                 controls
               />
             </Container>
