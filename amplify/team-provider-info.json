@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify89392e4fd05d4-staging-162453-authRole",
+      "UnauthRoleArn": "arn:aws:iam::023118148633:role/amplify-amplify89392e4fd05d4-staging-162453-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::023118148633:role/amplify-amplify89392e4fd05d4-staging-162453-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-amplify89392e4fd05d4-staging-162453-deployment",
+      "UnauthRoleName": "amplify-amplify89392e4fd05d4-staging-162453-unauthRole",
+      "StackName": "amplify-amplify89392e4fd05d4-staging-162453",
+      "StackId": "arn:aws:cloudformation:eu-central-1:023118148633:stack/amplify-amplify89392e4fd05d4-staging-162453/5e515290-5cfa-11ec-a566-0238d46cffe2",
+      "AmplifyAppId": "d3rlyfeq5s9svt"
+    },
+    "categories": {
+      "auth": {
+        "chakrareactapp72150447": {}
+      }
+    }
+  }
+}

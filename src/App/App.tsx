@@ -5,10 +5,11 @@ import {
   VStack,
   Grid,
   theme,
-  Image,
   Container,
   Center,
 } from "@chakra-ui/react";
+
+import { File } from "../File/File";
 
 import ReactPlayer from "react-player";
 import { ColorModeSwitcher } from "./ColorModeSwitcher";
@@ -28,7 +29,7 @@ export const App = () => {
         </Text>
       </Box>
       <Center p="15" w="100%">
-        <Grid minH="100vh" p={3}>
+        {/* <Grid minH="100vh" p={3}>
           <VStack spacing={4} maxW="container.md">
             <Container
               p="2"
@@ -46,40 +47,10 @@ export const App = () => {
                 controls
               />
             </Container>
-            <Container
-              p="2"
-              maxW="container.xl"
-              borderWidth="1px"
-              borderRadius="lg"
-              overflow="hidden"
-            >
-              <ReactPlayer
-                url="https://downloader.disk.yandex.ru/disk/26fabaa408368b13e96af3b2bc56d0e8768b1e181fcfbc77dcd8f7e2267ec3e6/61b88edd/BHL3x6ocnUGX0NVBbiAm3m-VGGNF7JLjAWsS0TvbvWgU4XQPXLRMqU2HEPzl6q5zmbe7o43MMqvJEj0NeiRVRA%3D%3D?uid=0&filename=20211117_190007.mp4&disposition=attachment&hash=wnrlcLPKfi09LUoSra/wvhP9NE8NWoThHKqP9KaNFPhplRyAn/CfD7STw22kO4Edq/J6bpmRyOJonT3VoXnDag%3D%3D%3A&limit=0&content_type=video%2Fmp4&owner_uid=4526528&fsize=33609439&hid=6b29e5574f68c626d2183cb8ffebf522&media_type=video&tknv=v2"
-                className="react-player"
-                playing
-                width="100%"
-                height="100%"
-                controls
-              />
-            </Container>
-            <Container
-              p="2"
-              maxW="container.xl"
-              borderWidth="1px"
-              borderRadius="lg"
-              overflow="hidden"
-            >
-              <ReactPlayer
-                url="https://downloader.disk.yandex.ru/disk/b6a96ef7e8c64fcf6c397939e0b6e0b694fb139708ae85e675f38cc974b61359/61b88e3f/W7XWPN7K8CPOll4n_1TefTlwRn4GsaM-oHZinuDnDo0qIZNpgWbxELqANEmXkGniwkNwLEMcobGLuyImquQClw%3D%3D?uid=0&filename=20200721_152504.mp4&disposition=attachment&hash=FFW74u5AF%2B7DmH58qwhm%2B83IMIaY61Y4N%2BhKVXWT8KRZOoVoqRzoKG7gX%2BYDPOyQq/J6bpmRyOJonT3VoXnDag%3D%3D%3A&limit=0&content_type=video%2Fmp4&owner_uid=4526528&fsize=133765253&hid=e4ee436782bb727311c7e8714515fda5&media_type=video&tknv=v2"
-                className="react-player"
-                width="100%"
-                height="100%"
-                type="video/mp4"
-                controls
-              />
-            </Container>
-          </VStack>
-        </Grid>
+
+            </VStack>
+          </Grid> */}
+        <File />
       </Center>
     </ChakraProvider>
   );
