@@ -2,10 +2,7 @@ import {
   ChakraProvider,
   Box,
   Text,
-  VStack,
-  Grid,
   theme,
-  Container,
   Center,
 } from "@chakra-ui/react";
 
