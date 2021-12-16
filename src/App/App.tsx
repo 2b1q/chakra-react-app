@@ -11,7 +11,7 @@ import {
 
 import { File } from "../File/File";
 
-import ReactPlayer from "react-player";
+
 import { ColorModeSwitcher } from "./ColorModeSwitcher";
 
 export const App = () => {
