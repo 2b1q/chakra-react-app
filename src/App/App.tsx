@@ -1,14 +1,6 @@
-import {
-  ChakraProvider,
-  Box,
-  Text,
-  theme,
-  Center,
-} from "@chakra-ui/react";
+import { ChakraProvider, Box, Text, theme, Center } from "@chakra-ui/react";
 
 import { File } from "../File/File";
-
-
 import { ColorModeSwitcher } from "./ColorModeSwitcher";
 
 export const App = () => {
