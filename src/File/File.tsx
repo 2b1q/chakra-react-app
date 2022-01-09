@@ -188,33 +188,33 @@ export const File = () => {
       </Container>
 
       <Grid minH="100vh">
-        <VStack spacing={2} maxW="container.md">
+        <VStack spacing={2}>
           {files.map((file) => (
             <Container
               p="1"
-              maxW="container.xl"
               borderWidth="1px"
               borderRadius="lg"
               overflow="hidden"
-              height="100%"
               key={file.id || file.name}
             >
-              {file.video && (
-                <ReactPlayer
-                  url={file.video}
-                  className="react-player"
-                  width="100%"
-                  height="90%"
-                  controls
-                />
-              )}
+              <Container>
+                {file.video && (
+                  <ReactPlayer
+                    url={file.video}
+                    className="react-player"
+                    width="100%"
+                    height="100%"
+                    controls
+                  />
+                )}
+              </Container>
 
               <Container
                 p={2}
                 display="flex"
                 alignContent="flex-end"
                 paddingLeft={3}
-                height={{ md: 10 }}
+                height={{ md: 20 }}
               >
                 <Text fontSize="xl" padding={3}>
                   {file.name}
@@ -236,16 +236,15 @@ export const File = () => {
                     }}
                   ></Image>
                 </Box>
-                <Badge
-                  ml="1"
-                  fontSize="0.8em"
+                <Text
                   margin={2}
-                  colorScheme="red"
-                  height="90%"
-                  fontWeight="bold"
+                  bgGradient="linear(to-l, #7928CA, #FF0080)"
+                  bgClip="text"
+                  fontSize="2xl"
+                  fontWeight="extrabold"
                 >
                   {file?.likes || 0}
-                </Badge>
+                </Text>
                 <Box as="button">
                   <Image
                     src={thumbup}
@@ -263,16 +262,15 @@ export const File = () => {
                     }}
                   ></Image>
                 </Box>
-                <Badge
-                  ml="1"
-                  fontSize="0.8em"
+                <Text
                   margin={2}
-                  colorScheme="green"
-                  height="90%"
-                  fontWeight="bold"
+                  bgGradient="linear(to-l, #7928CA, #FF0080)"
+                  bgClip="text"
+                  fontSize="2xl"
+                  fontWeight="extrabold"
                 >
                   {file?.thumbups || 0}
-                </Badge>
+                </Text>
                 <Button
                   marginLeft={10}
                   marginTop={3}
