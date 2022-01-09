@@ -1,0 +1,17 @@
+{
+  "resourceName": "s3be1dd3e0",
+  "policyUUID": "be1dd3e0",
+  "bucketName": "chakrareactapp72959d5d18754cecbfe707f6ed2a6689",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "groupAccess": {}
+}

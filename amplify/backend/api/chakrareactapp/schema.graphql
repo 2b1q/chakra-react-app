@@ -5,5 +5,7 @@ input AMPLIFY { globalAuthRule: AuthRule = { allow: public } } # FOR TESTING ONL
 type File @model {
   id: ID!
   name: String!
-  description: String
+  likes: Int
+  thumbups: Int
+  video: String
 }

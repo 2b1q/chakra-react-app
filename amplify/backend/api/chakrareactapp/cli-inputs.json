@@ -6,7 +6,11 @@
     "gqlSchemaPath": "/Users/bbq/code_playground/react-chakra-app/amplify/backend/api/chakrareactapp/schema.graphql",
     "defaultAuthType": {
       "mode": "API_KEY",
-      "expirationTime": 7
-    }
+      "expirationTime": 100,
+      "apiKeyExpirationDate": "2022-04-19T13:18:58.453Z",
+      "keyDescription": "demo"
+    },
+    "conflictResolution": {},
+    "additionalAuthTypes": []
   }
 }

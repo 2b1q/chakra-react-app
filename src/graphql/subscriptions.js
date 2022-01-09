@@ -6,7 +6,9 @@ export const onCreateFile = /* GraphQL */ `
     onCreateFile {
       id
       name
-      description
+      likes
+      thumbups
+      video
       createdAt
       updatedAt
     }
@@ -17,7 +19,9 @@ export const onUpdateFile = /* GraphQL */ `
     onUpdateFile {
       id
       name
-      description
+      likes
+      thumbups
+      video
       createdAt
       updatedAt
     }
@@ -28,7 +32,9 @@ export const onDeleteFile = /* GraphQL */ `
     onDeleteFile {
       id
       name
-      description
+      likes
+      thumbups
+      video
       createdAt
       updatedAt
     }

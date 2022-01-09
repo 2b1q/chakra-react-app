@@ -9,7 +9,9 @@ export const createFile = /* GraphQL */ `
     createFile(input: $input, condition: $condition) {
       id
       name
-      description
+      likes
+      thumbups
+      video
       createdAt
       updatedAt
     }
@@ -23,7 +25,9 @@ export const updateFile = /* GraphQL */ `
     updateFile(input: $input, condition: $condition) {
       id
       name
-      description
+      likes
+      thumbups
+      video
       createdAt
       updatedAt
     }
@@ -37,7 +41,9 @@ export const deleteFile = /* GraphQL */ `
     deleteFile(input: $input, condition: $condition) {
       id
       name
-      description
+      likes
+      thumbups
+      video
       createdAt
       updatedAt
     }

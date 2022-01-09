@@ -6,7 +6,9 @@ export const getFile = /* GraphQL */ `
     getFile(id: $id) {
       id
       name
-      description
+      likes
+      thumbups
+      video
       createdAt
       updatedAt
     }
@@ -22,7 +24,9 @@ export const listFiles = /* GraphQL */ `
       items {
         id
         name
-        description
+        likes
+        thumbups
+        video
         createdAt
         updatedAt
       }

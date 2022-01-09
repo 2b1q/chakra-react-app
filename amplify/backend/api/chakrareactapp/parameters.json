@@ -1,5 +1,6 @@
 {
   "AppSyncApiName": "chakrareactapp",
   "DynamoDBBillingMode": "PAY_PER_REQUEST",
-  "DynamoDBEnableServerSideEncryption": false
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthModeLastUpdated": "2022-01-09T11:36:13.292Z"
 }
