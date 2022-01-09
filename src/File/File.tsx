@@ -238,7 +238,7 @@ export const File = () => {
                 </Box>
                 <Text
                   margin={2}
-                  bgGradient="linear(to-l, #7928CA, #FF0080)"
+                  bgColor='red'
                   bgClip="text"
                   fontSize="2xl"
                   fontWeight="extrabold"
@@ -264,7 +264,7 @@ export const File = () => {
                 </Box>
                 <Text
                   margin={2}
-                  bgGradient="linear(to-l, #7928CA, #FF0080)"
+                  bgColor='teal'
                   bgClip="text"
                   fontSize="2xl"
                   fontWeight="extrabold"
