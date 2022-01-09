@@ -7,6 +7,8 @@ import {
   useToast,
   Box,
   Image,
+  Text,
+  Heading,
   Badge,
 } from "@chakra-ui/react";
 
@@ -186,7 +188,7 @@ export const File = () => {
       </Container>
 
       <Grid minH="100vh">
-        <VStack spacing={1} maxW="container.md">
+        <VStack spacing={2} maxW="container.md">
           {files.map((file) => (
             <Container
               p="1"
@@ -194,20 +196,29 @@ export const File = () => {
               borderWidth="1px"
               borderRadius="lg"
               overflow="hidden"
+              height="100%"
               key={file.id || file.name}
             >
               {file.video && (
                 <ReactPlayer
                   url={file.video}
                   className="react-player"
-                  playing
                   width="100%"
-                  height="95%"
+                  height="90%"
                   controls
                 />
               )}
 
-              <Box p={1} display="flex" alignContent="flex-end" paddingLeft={3}>
+              <Container
+                p={2}
+                display="flex"
+                alignContent="flex-end"
+                paddingLeft={3}
+                height={{ md: 10 }}
+              >
+                <Text fontSize="xl" padding={3}>
+                  {file.name}
+                </Text>
                 <Box as="button">
                   <Image
                     src={like}
@@ -235,26 +246,28 @@ export const File = () => {
                 >
                   {file?.likes || 0}
                 </Badge>
-                <Image
-                  src={thumbup}
-                  boxSize="42px"
-                  onClick={() => {
-                    let thumbups = (file as IFile)?.thumbups || 0;
-                    thumbups += 1;
+                <Box as="button">
+                  <Image
+                    src={thumbup}
+                    boxSize="42px"
+                    onClick={() => {
+                      let thumbups = (file as IFile)?.thumbups || 0;
+                      thumbups += 1;
 
-                    const updatedFile = {
-                      ...file,
-                      thumbups,
-                    } as IFile;
+                      const updatedFile = {
+                        ...file,
+                        thumbups,
+                      } as IFile;
 
-                    updateFile(updatedFile);
-                  }}
-                ></Image>
+                      updateFile(updatedFile);
+                    }}
+                  ></Image>
+                </Box>
                 <Badge
                   ml="1"
                   fontSize="0.8em"
                   margin={2}
-                  colorScheme="purple"
+                  colorScheme="green"
                   height="90%"
                   fontWeight="bold"
                 >
@@ -262,6 +275,7 @@ export const File = () => {
                 </Badge>
                 <Button
                   marginLeft={10}
+                  marginTop={3}
                   colorScheme="red"
                   size="xs"
                   variant="outline"
@@ -269,7 +283,7 @@ export const File = () => {
                 >
                   Удалить файл
                 </Button>
-              </Box>
+              </Container>
             </Container>
           ))}
         </VStack>
